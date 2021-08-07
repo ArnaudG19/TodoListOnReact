@@ -75,6 +75,10 @@
     font-size: 1rem;
   }
 
+  .trash-btn:hover{
+    background: rgb(228, 4, 4);
+  }
+
   .complete-btn {
     background: rgb(11, 212, 162);
   }
@@ -142,3 +146,61 @@
     transform: scale(1.5);
   }
   */
+  /* Responsive */
+
+  @media screen and  (max-width : 1413px) { 
+    .todo{
+      margin-left: -2em; 
+      margin-right: -2em;
+    }
+}
+
+@media screen and (max-width : 1086px) {
+  .todo{
+    margin-left: -4em; 
+    margin-right: -4em;
+  }
+}
+
+@media screen and (max-width : 731px) {
+  .todo-input{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width : 510px) {
+  h1{
+    font-size: 1.5em;
+  }
+  form{
+    display: block;
+  }
+  .todo-input{
+    width: 52%;
+    margin-left: 21%;
+  }
+
+  .select::after{
+    right: auto;
+  }
+
+  select{
+    margin-left: 34%;
+    width: 27%;
+  }
+}
+
+@media screen and (max-width : 380px) {
+  h1{
+    font-size: 1.3em;
+  }
+
+  .todo-input{
+    width: 60%;
+    margin-left: 15%;
+  }
+
+  .todo-item{
+    font-size: 0.7em;
+  }
+}
